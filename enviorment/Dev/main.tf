@@ -11,9 +11,11 @@ module "virtual_network" {
 module "bastion" {
   source = "../../modules/AzureBastionSubnet"
   bastion_subnet = var.bastion_subnet
+  bastion_host = var.bastion_host
 }
 
 module "firewall" {
-  source = "../../modules/AzureFirewallSubnet"
+  source = "../../modules/azure_firewall"
   firewall_subnet = var.firewall_subnet
+  firewall = var.firewall
 }

@@ -10,3 +10,9 @@ variable "bastion_subnet" {
 variable "firewall_subnet" {
   
 }
+variable "bastion_host" {
+  
+}
+variable "firewall" {
+  
+}
